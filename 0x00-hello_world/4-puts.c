@@ -1,8 +1,12 @@
 #include <stdio.h>
 
-/* prints the following using puts */
+/**
+ * main - printing a message
+ *Return: int 0 Success
+ */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle \n");
+	/** prints + newline */
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
