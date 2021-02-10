@@ -4,7 +4,8 @@
  * main - prints sizes of data types
  * Return: int 0 success
  */
-int main() {
+int main(void)
+{
 	char charType;
 	int intType;
 	float floatType;
@@ -17,6 +18,5 @@ int main() {
 	printf("Size of a long int: %zu byte(s), sizeof(long_int)");
 	printf("Size of a long long int: %zu byte(s), sizeof(long_long_int)");
 	printf("Size of a float: %zu byte(s), sizeof(floatType)");
-	
 	return (0);
 }
