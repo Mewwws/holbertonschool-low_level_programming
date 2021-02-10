@@ -1,7 +1,7 @@
 #include <stdio.h>
-/*
+/**
  * main - prints a message
- * returns: int 0 success
+ *Return: int 0 success
  */
 int main(void)
 {
