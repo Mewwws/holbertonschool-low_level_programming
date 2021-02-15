@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - resets to 98
- * n - processed variable
+ * @n: processed variable
  * Return: void
  */
 
