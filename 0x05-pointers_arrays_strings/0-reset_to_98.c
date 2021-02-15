@@ -2,8 +2,8 @@
 
 /**
  * reset_to_98 - resets to 98
- *
- * Return: 
+ * n - processed variable
+ * Return: void
  */
 
 void reset_to_98(int *n)
