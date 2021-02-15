@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * swap_int - swaps variables @a: with @b:
+ * swap_int - swaps variables
  * @a: is swapped
  * @b: is swapped
  * Return: void
