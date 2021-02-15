@@ -1,9 +1,16 @@
 #include "holberton.h"
 #include <stdio.h>
+#include <string.h>
 
 int _strlen(char *s)
 {
-	int len;
+	int i;
 
-	strlen(str);
+	while(s != \0)
+	{
+		s++;
+		i++;
+	}
+	*s = i;
+	return 
 }
