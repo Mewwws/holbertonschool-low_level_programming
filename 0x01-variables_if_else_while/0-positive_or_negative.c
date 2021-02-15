@@ -1,12 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-/*
- *main - checks sign of number
- *return 0
+/**
+ * main - posetive negative
+ * Return: void
  */
 int main(void)
 {
@@ -29,3 +26,4 @@ int main(void)
 	}
 	return (0);
 }
+
