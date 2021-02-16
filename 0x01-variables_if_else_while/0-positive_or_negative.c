@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main - posetive negative
+ * main - cheks sign
  * Return: void
  */
 int main(void)
@@ -26,4 +27,3 @@ int main(void)
 	}
 	return (0);
 }
-
