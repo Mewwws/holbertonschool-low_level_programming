@@ -15,8 +15,6 @@ void more_numbers(void)
 		char k;
 
 		j = '0';
-		k = 'O';
-
 		while (j < 15)
 		{
 			if (j > 10)
@@ -27,6 +25,7 @@ void more_numbers(void)
 			k = (j % 10);
 			_putchar(k);
 			_putchar('\n');
+			j++;
 		}
 	}
 }
