@@ -2,7 +2,8 @@
 
 /**
  * cap_string - capitalises all words
- * Return: 
+ * @s: string capped
+ * Return: s
  */
 char *cap_string(char *s)
 {
@@ -12,7 +13,7 @@ char *cap_string(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] >= 97 && s[i] <+ 122)
+		if (s[i] >= 97 && s[i] <= 122)
 		{
 			for (k = 0; k < 14; k++)
 			{
