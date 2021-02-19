@@ -2,8 +2,8 @@
 
 /**
  * mul - multiplies
- * a - gets multiplied
- * b - gets multiplied
+ * @a: gets multiplied
+ * @b: gets multiplied
  * Return: result
  */
 int mul(int a, int b)
