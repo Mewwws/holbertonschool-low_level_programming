@@ -18,5 +18,12 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
-	return (s);
+	if (*s == c)
+	{
+		return (s);
+	}
+	else
+	{
+		return (0);
+	}
 }
