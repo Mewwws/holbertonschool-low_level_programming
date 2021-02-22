@@ -32,5 +32,12 @@ char *_strstr(char *haystack, char *needle)
 			}
 		}
 	}
-	return (haystack);
+	if (haystack[i] == needle[i])
+	{
+		return (haystack);
+	}
+	else
+	{
+		return (0);
+	}
 }
