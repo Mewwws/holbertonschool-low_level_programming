@@ -2,6 +2,7 @@
 
 /**
 * factorial - count factorial
+* @n: n!
 * Return: result
 */
 int factorial(int n)

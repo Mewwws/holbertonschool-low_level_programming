@@ -1,8 +1,9 @@
 #include "holberton.h"
 
 /**
-* 
-* Return:
+* _sqrt_recursion - square root with recursion?
+* @n: search square root of this
+* Return: root or -1
 */
 int _sqrt_recursion(int n)
 {
