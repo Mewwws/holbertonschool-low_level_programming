@@ -2,18 +2,20 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
- * main- prints alphabet
- *
- * return: 0
+/**
+ * main - prints alphabet
+ * Return: 0
  */
 
-int main()
+int main(void)
 {
-	char az= 'a';
+	char az = 'a';
+
 	while (az < ('z' + 1))
 	{
-		putchar("%c, az");
+		putchar(az);
 		az++;
 	}
+	putchar ('\n');
+	return (0);
 }
