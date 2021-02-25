@@ -10,3 +10,4 @@ int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int manual(int n, int i);
 int primanual(int n, int i);
+int manudrome(char *s, int i, int j);
