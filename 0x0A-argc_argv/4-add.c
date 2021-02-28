@@ -12,9 +12,10 @@ int main(int argc, char *argv[])
 {
 	unsigned int i = 0;
 	int j;
-	
+
 	for (j = 1; j < argc; j++)
-	{		if (*argv[j] < '0' || *argv[j] > '9')
+	{
+		if (*argv[j] < '0' || *argv[j] > '9')
 		{
 			printf("Error\n");
 			return (1);
