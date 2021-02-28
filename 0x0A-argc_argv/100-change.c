@@ -17,31 +17,16 @@ int main(int argc, char *argv[])
 	}
 	int i = 0;
 	int j = atoi(argv[1]);
+	int k[5] = {25, 10, 5, 2, 1};
+	int l;
 
-	if (j >= 25)
+	for (l = 0; l < 5; l++)
 	{
-		i = i + j / 25;
-		j = j % 25;
+	if (j >= k[l])
+	{
+		i = i + j / k[l];
+		j = j % k[l];
 	}
-	if (j >= 10)
-	{
-		i = i + j / 10;
-		j = j % 10;
-	}
-	while (j >= 5)
-	{
-		i = i + j / 5;
-		j = j % 5;
-	}
-	while (j >= 2)
-	{
-		i = i + j / 2;
-		j = j % 2;
-	}
-	while (j == 1)
-	{
-		i++;
-		j -= 1;
 	}
 	printf("%d\n", i);
 	return (0);
