@@ -20,6 +20,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	if (j < 0)
+		printf("0\n");
 	for (l = 0; l < 5; l++)
 	{
 	if (j >= k[l])
