@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i = 0;
-	int j = atoi(argv[1]);
+	int j;
 	int k[5] = {25, 10, 5, 2, 1};
 	int l;
 
@@ -20,8 +20,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (j < 0)
-		printf("0\n");
+	j = atoi(argv[1]);
 	for (l = 0; l < 5; l++)
 	{
 	if (j >= k[l])
