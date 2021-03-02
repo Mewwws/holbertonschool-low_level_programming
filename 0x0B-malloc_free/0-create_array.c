@@ -1,11 +1,11 @@
 #include "holberton.h"
 #include <stdlib.h>
 
-/*
+/**
  * *create_array - creates an array and fills it with a char
  * @size: size of the array
  * @c: char filler
- * return:
+ * Return: pointer to s
  */
 
 char *create_array(unsigned int size, char c)
