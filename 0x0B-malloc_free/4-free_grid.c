@@ -5,7 +5,7 @@
  * free_grid - frees grid
  * @grid: to free
  * @height: of the grid
- * Return: pointer to ar
+ * Return: void
  */
 void free_grid(int **grid, int height)
 {
