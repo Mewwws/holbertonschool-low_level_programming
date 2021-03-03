@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * **alloc_grid - allocates memory for an array
+ * free_grid - frees grid
  * @grid: to free
  * @height: of the grid
  * Return: pointer to ar
@@ -13,8 +13,8 @@ void free_grid(int **grid, int height)
 
 	while (i < height)
 	{
-		free(ar[i]);
-		free(ar);
+		free(grid[i]);
+		free(grid);
 		i--;
 	}
 }
