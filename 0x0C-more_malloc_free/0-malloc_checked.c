@@ -4,7 +4,7 @@
 /**
  * *malloc_checked - alloc with malloc and chec if it worc
  * @b: size
- * Return: void
+ * Return: p
  */
 void *malloc_checked(unsigned int b)
 {
