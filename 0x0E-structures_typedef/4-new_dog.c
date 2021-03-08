@@ -1,24 +1,12 @@
 #include <stdio.h>
 #include "dog.h"
 /**
- * print_dog - prints doge
- * @d: doge pointer
+ * *new_dog - does nothing
+ * @name: doge name
+ * @age: doge age
+ * @owner: doge owner
  */
-void print_dog(struct dog *d)
+dog_t *new_dog(char *name, float age, char *owner)
 {
-	if (d)
-	{
-		if (d->name == NULL)
-			printf("Name: (nil)\n");
-		else
-			printf("Name: %s\n", d->name);
-		if (d->age < 0)
-			printf("Age: (nil)\n");
-		else
-			printf("Age: %f\n", d->age);
-		if (d->owner == NULL)
-			printf("Owner: (nil)\n");
-		else
-			printf("Owner: %s\n", d->owner);
-	}
+	return (0);
 }
