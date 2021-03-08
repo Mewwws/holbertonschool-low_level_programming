@@ -1,5 +1,5 @@
 #ifndef _DOGE
-#include _DOGE
+#define _DOGE
 struct dog
 {
 	char *name;
