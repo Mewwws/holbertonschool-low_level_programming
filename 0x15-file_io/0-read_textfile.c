@@ -1,4 +1,9 @@
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 #include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "holberton.h"
 
 /**
@@ -10,9 +15,9 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int a, c;
-	char *b[];
+	char *b;
 
-	if (*filename == NULL)
+	if (filename == NULL)
 		return (0);
 	a = open("filename", O_RDONLY);
 	if (a == -1)
