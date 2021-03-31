@@ -30,7 +30,6 @@ int main(int ac, char **av)
 	/* copying */
 	while ((c = read(a, e, 1024)) > 0)
 	{
-		printf("%s\n", e);
 		d = write(b, e, c);
 		if (d == -1)
 		{
