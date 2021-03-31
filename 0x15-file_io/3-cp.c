@@ -5,7 +5,7 @@
  */
 int main(int ac, char **av)
 {
-	int a, b, c;
+	int a, b, c, d;
 	char e[1024];
 
 	if (ac != 3)
@@ -28,17 +28,17 @@ int main(int ac, char **av)
 	}
 	while ((c = read(a, e, 1024)) > 0)
 	{
-		if (c == -1)
+		d = write(b, e, c);
+		if (d == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 			exit(99);
 		}
-		c = write(b, e, c);
-		if (c == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
-			exit(99);
-		}
+	}
+	if (c == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+		exit(99);
 	}
 	c = close(a);
 	if (c == -1)
