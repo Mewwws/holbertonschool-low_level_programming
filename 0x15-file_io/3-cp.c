@@ -30,17 +30,17 @@ int main(int ac, char **av)
 	/* copying */
 	while ((c = read(a, e, 1024)) > 0)
 	{
+		if (c == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+			exit(99);
+		}
 		d = write(b, e, c);
 		if (d == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 			exit(99);
 		}
-	}
-	if (c == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
-		exit(99);
 	}
 	/* closing */
 	c = close(a);
