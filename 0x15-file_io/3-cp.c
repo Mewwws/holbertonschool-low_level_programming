@@ -17,7 +17,7 @@ int main(int ac, char **av)
 	if (a == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
-		exit(99);
+		exit(98);
 	}
 	b = open(av[2], O_CREAT | O_RDONLY | O_TRUNC, 0664);
 	if (b == -1)
