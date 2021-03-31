@@ -1,4 +1,20 @@
 #include "holberton.h"
+/** closing - closes files from their fd
+ * @fd: file code
+ * @c: checker
+ * Return: void
+ */
+void closing(fd, c)
+{
+	c = close(fd);
+	if (c == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d", fd);
+		exit(100);
+	}
+	
+}
+
 /**
  * main - copies content from file to another
  * Return: 1 if success / 97 -> 100 if error
@@ -43,17 +59,7 @@ int main(int ac, char **av)
 		exit(98);
 	}
 	/* closing */
-	c = close(a);
-	if (c == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d", a);
-		exit(100);
-	}
-	c = close(b);
-	if (c == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d", b);
-		exit(100);
-	}
+	closing(a);
+	closing(b);
 	return (0);
 }
