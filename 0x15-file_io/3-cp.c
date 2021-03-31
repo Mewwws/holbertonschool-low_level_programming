@@ -4,7 +4,7 @@
  * @c: checker
  * Return: void
  */
-void closing(fd, c)
+void closing(int fd, int c)
 {
 	c = close(fd);
 	if (c == -1)
@@ -59,7 +59,7 @@ int main(int ac, char **av)
 		exit(98);
 	}
 	/* closing */
-	closing(a);
-	closing(b);
+	closing(a, c);
+	closing(b, c);
 	return (0);
 }
