@@ -16,6 +16,8 @@ int append_text_to_file(const char *filename, char *text_content)
 	a = open(filename, O_WRONLY | O_APPEND);
 	if (a == -1)
 		return (-1);
+	for (b = 0; text_content[b] != '\0'; b++)
+			continue;
 	c = write(a, text_content, b);
 	if (c < 0)
 		return (-1);
