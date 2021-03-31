@@ -1,6 +1,5 @@
 #include "holberton.h"
 
-
 /**
  * main - does nothing yet
  * @ac: arguments count
@@ -9,6 +8,7 @@
  */
 int main(int ac, char **av)
 {
-	printf("ELF?");
+	if (ac == 1)
+		printf("%s", av[1]);
 	return (0);
 }
