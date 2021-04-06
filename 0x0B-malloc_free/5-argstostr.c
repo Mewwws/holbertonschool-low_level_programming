@@ -1,5 +1,6 @@
-#include “holberton.h”
-
+#include "holberton.h"
+#include <stddef.h>
+#include <stdlib.h>
 /**
  * argstostr - cats strings
  * @ac: args count
@@ -12,7 +13,7 @@ char *argstostr(int ac, char **av)
 	int k = 0;
 	char *h;
 
-	if (ac < 1 || av = NULL)
+	if (ac < 1 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
