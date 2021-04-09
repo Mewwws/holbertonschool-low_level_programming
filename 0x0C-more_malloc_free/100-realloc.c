@@ -3,10 +3,10 @@
 
 /**
  * _realloc - realloc with malloc and free
- * @ptr:
- * @old_size:
- * @new_size:
- * Return:
+ * @ptr: pointer to allocated
+ * @old_size: old size
+ * @new_size: new size
+ * Return: pointer to new allocated / NULL
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
@@ -26,7 +26,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	if (new_size > old_size)
 	{
-		free (ptr);
+		free(ptr);
 		a = malloc(new_size);
 		return (a);
 	}
