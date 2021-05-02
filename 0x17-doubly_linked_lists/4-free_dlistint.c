@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - free dlisted
+ * free_dlistint - free dlisted
  * @head: dlist to free
  * Return: pointer to new node
  */
