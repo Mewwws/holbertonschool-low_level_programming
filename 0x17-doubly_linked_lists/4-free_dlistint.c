@@ -1,12 +1,11 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - dlisted add node at the end
- * @head: header node pointer
- * @n: value to insert
+ * add_dnodeint_end - free dlisted
+ * @head: dlist to free
  * Return: pointer to new node
  */
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
+void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *nex;
 
